@@ -10,9 +10,6 @@ router.get('/members', function(req, res, next) {
   res.render('members', { title: 'Members' });
 });
 
-router.get('/events', function(req, res, next) {
-  res.render('events', { title: 'Events' });
-});
 
 router.get('/acmw', function(req, res, next) {
   res.render('acmw', { title: 'ACMW' });
@@ -32,5 +29,9 @@ router.get('/spgrp', function(req, res, next) {
 
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
+});
+
+router.get('/calendar', function(req, res, next) {
+  res.render('calendar', { title: 'Contact' });
 });
 module.exports = router;
