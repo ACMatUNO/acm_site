@@ -3,34 +3,34 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'ACM Home', header: 'ACM@UNO' });
 });
 
 router.get('/members', function(req, res, next) {
-  res.render('index', { title: 'Members' });
+  res.render('members', { title: 'Members' });
 });
 
 router.get('/events', function(req, res, next) {
-  res.render('index', { title: 'Events' });
+  res.render('events', { title: 'Events' });
 });
 
 router.get('/acmw', function(req, res, next) {
-  res.render('index', { title: 'ACMW' });
+  res.render('acmw', { title: 'ACMW' });
 });
 
 router.get('/loginpage', function(req, res, next) {
-  res.render('index', { title: 'Login' });
+  res.render('loginpage', { title: 'Login' });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
+  res.render('about', { title: 'About' });
 });
 
 router.get('/spgrp', function(req, res, next) {
-  res.render('index', { title: 'Special Interest Groups' });
+  res.render('spgrp', { title: 'Special Interest Groups' });
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
+  res.render('contact', { title: 'Contact' });
 });
 module.exports = router;
